@@ -20,6 +20,7 @@ export default function Home() {
                 href="mailto:zack[at]zacksigmund.com"
                 target="_blank"
                 rel="noreferrer"
+                aria-label="Connect with Zack over email"
               >
                 <FontAwesomeIcon icon={faEnvelope} size="xl" />
               </a>
@@ -27,6 +28,7 @@ export default function Home() {
                 href="https://www.linkedin.com/in/zacksigmund"
                 target="_blank"
                 rel="noreferrer"
+                aria-label="Connect with Zack on LinkedIn"
               >
                 <FontAwesomeIcon icon={faLinkedin} size="xl" />
               </a>
@@ -34,6 +36,7 @@ export default function Home() {
                 href="https://bsky.app/profile/zacksigmund.com"
                 target="_blank"
                 rel="noreferrer"
+                aria-label="Connect with Zack on BlueSky"
               >
                 <FontAwesomeIcon icon={faBluesky} size="xl" />
               </a>
