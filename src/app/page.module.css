@@ -70,6 +70,12 @@ a.secondary {
   border-color: var(--button-secondary-border);
 }
 
+.socials {
+    margin-block: 8px;
+    display: flex;
+    gap: 16px;
+}
+
 /* Enable hover only on non-touch devices */
 @media (hover: hover) and (pointer: fine) {
   a.primary:hover {
