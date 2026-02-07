@@ -14,6 +14,9 @@ export default function Home() {
             Hi, I'm Zack, a senior full stack software engineer based out of
             Cleveland, OH. This site is under construction.
           </Text>
+          <Text as="p" lang="jp">
+            日本語も話せます。
+          </Text>
           <Text as="p">
             Connect with me <br />
             <Flex as="span" gap="2">
