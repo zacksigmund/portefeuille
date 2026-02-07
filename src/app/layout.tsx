@@ -1,9 +1,11 @@
 import type { Metadata } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
+import "@radix-ui/themes/styles.css";
 
 import { config } from "@fortawesome/fontawesome-svg-core";
 import "@fortawesome/fontawesome-svg-core/styles.css";
+import { Theme } from "@radix-ui/themes";
 config.autoAddCss = false;
 
 const geistSans = Geist({
@@ -30,7 +32,14 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={`${geistSans.variable} ${geistMono.variable}`}>
-        {children}
+        <Theme
+          accentColor="indigo"
+          grayColor="slate"
+          radius="large"
+          appearance="dark"
+        >
+          {children}
+        </Theme>
       </body>
     </html>
   );
