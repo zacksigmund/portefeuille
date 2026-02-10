@@ -1,7 +1,5 @@
+import { Icon } from "@/components/Icon";
 import styles from "./page.module.css";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faBluesky, faLinkedin } from "@fortawesome/free-brands-svg-icons";
-import { faEnvelope } from "@fortawesome/free-regular-svg-icons";
 import { Container, Flex, Heading, Link, Text } from "@radix-ui/themes";
 
 export default function Home() {
@@ -27,7 +25,7 @@ export default function Home() {
                 aria-label="Connect with Zack over email"
                 color="gray"
               >
-                <FontAwesomeIcon icon={faEnvelope} size="xl" />
+                <Icon name="envelope" />
               </Link>
               <Link
                 href="https://www.linkedin.com/in/zacksigmund"
@@ -36,7 +34,7 @@ export default function Home() {
                 aria-label="Connect with Zack on LinkedIn"
                 color="gray"
               >
-                <FontAwesomeIcon icon={faLinkedin} size="xl" />
+                <Icon name="linkedin" />
               </Link>
               <Link
                 href="https://bsky.app/profile/zacksigmund.com"
@@ -45,7 +43,7 @@ export default function Home() {
                 aria-label="Connect with Zack on BlueSky"
                 color="gray"
               >
-                <FontAwesomeIcon icon={faBluesky} size="xl" />
+                <Icon name="bluesky" />
               </Link>
             </Flex>
           </Text>
