@@ -1,6 +1,7 @@
 import { Icon } from "@/components/Icon";
 import styles from "./page.module.css";
-import { Container, Flex, Heading, Link, Text } from "@radix-ui/themes";
+import { Container, Flex, Heading, Text } from "@radix-ui/themes";
+import { Link } from "@/components/Link";
 
 export default function Home() {
   return (
@@ -20,28 +21,19 @@ export default function Home() {
             <Flex as="span" gap="2">
               <Link
                 href="mailto:zack[at]zacksigmund.com"
-                target="_blank"
-                rel="noreferrer"
                 aria-label="Connect with Zack over email"
-                color="gray"
               >
                 <Icon name="envelope" />
               </Link>
               <Link
                 href="https://www.linkedin.com/in/zacksigmund"
-                target="_blank"
-                rel="noreferrer"
                 aria-label="Connect with Zack on LinkedIn"
-                color="gray"
               >
                 <Icon name="linkedin" />
               </Link>
               <Link
                 href="https://bsky.app/profile/zacksigmund.com"
-                target="_blank"
-                rel="noreferrer"
                 aria-label="Connect with Zack on BlueSky"
-                color="gray"
               >
                 <Icon name="bluesky" />
               </Link>
