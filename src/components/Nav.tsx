@@ -29,7 +29,7 @@ export function Nav() {
                   <LinkButton href="/projects">Projects</LinkButton>
                 </li>
                 <li>
-                  <LinkButton href="/resume">Resume</LinkButton>
+                  <LinkButton href="/resume">Résumé</LinkButton>
                 </li>
               </ul>
             </Reset>
