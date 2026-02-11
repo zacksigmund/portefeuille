@@ -1,6 +1,6 @@
 import { Icon } from "@/components/Icon";
-import { Flex, Heading, Text } from "@radix-ui/themes";
 import { Link } from "@/components/Link";
+import { Flex, Heading, Text } from "@radix-ui/themes";
 
 export default function Home() {
   return (

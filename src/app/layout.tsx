@@ -1,12 +1,14 @@
+import { config } from "@fortawesome/fontawesome-svg-core";
+import { Container, Theme } from "@radix-ui/themes";
 import type { Metadata } from "next";
 import { Noto_Sans, Noto_Sans_JP } from "next/font/google";
+
+import "@fortawesome/fontawesome-svg-core/styles.css";
 import "@radix-ui/themes/styles.css";
+
+import { Nav } from "@/components/Nav";
 import "./globals.css";
 
-import { config } from "@fortawesome/fontawesome-svg-core";
-import "@fortawesome/fontawesome-svg-core/styles.css";
-import { Container, Theme } from "@radix-ui/themes";
-import { Nav } from "@/components/Nav";
 config.autoAddCss = false;
 
 const notoSans = Noto_Sans({

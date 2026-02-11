@@ -1,8 +1,8 @@
-import { default as NextLink } from "next/link";
 import {
   Link as RadixLink,
   LinkProps as RadixLinkProps,
 } from "@radix-ui/themes";
+import { default as NextLink } from "next/link";
 
 export interface LinkProps extends React.PropsWithChildren, RadixLinkProps {
   href: string;
