@@ -5,7 +5,7 @@ import "./globals.css";
 
 import { config } from "@fortawesome/fontawesome-svg-core";
 import "@fortawesome/fontawesome-svg-core/styles.css";
-import { Theme } from "@radix-ui/themes";
+import { Container, Theme } from "@radix-ui/themes";
 import { Nav } from "@/components/Nav";
 config.autoAddCss = false;
 
@@ -39,7 +39,9 @@ export default function RootLayout({
           appearance="dark"
         >
           <Nav />
-          {children}
+          <Container size="3" py="9" px="5">
+            <main>{children}</main>
+          </Container>
         </Theme>
       </body>
     </html>

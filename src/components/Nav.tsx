@@ -11,7 +11,7 @@ export function Nav() {
         gap="4"
         justify="between"
         align="center"
-        m="4"
+        m="5"
         asChild
       >
         <nav className={styles.nav}>
