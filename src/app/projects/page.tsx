@@ -1,5 +1,7 @@
 import { Link } from "@/components/Link";
 import { Flex, Heading, Text } from "@radix-ui/themes";
+import Image from "next/image";
+import sigfreedScreenshot from "./sigfreed.png";
 
 export default function Projects() {
   return (
@@ -13,6 +15,11 @@ export default function Projects() {
         I'd better double check how much of this I'm allowed to discuss…
       </Text>
       <Heading as="h2">Sigfreed</Heading>
+      <Image
+        src={sigfreedScreenshot}
+        alt="Screenshot of Sigfreed app showing Solitaire and Calculator open"
+        style={{ maxWidth: "100%", height: "auto" }}
+      />
       <Text as="p">
         A retro/nostalgic desktop-on-the-web, for when you just want something
         simple that works. The vibes are inspired heavily by{" "}
