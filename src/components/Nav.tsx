@@ -1,6 +1,5 @@
-import { Container, Flex, Heading } from "@radix-ui/themes";
+import { Container, Flex, Heading, Reset } from "@radix-ui/themes";
 import { Link } from "./Link";
-import styles from "./Nav.module.css";
 import { LinkButton } from "./LinkButton";
 
 export function Nav() {
@@ -14,24 +13,26 @@ export function Nav() {
         m="5"
         asChild
       >
-        <nav className={styles.nav}>
+        <nav>
           <Link href="/" color="gray">
             <Heading size="7" asChild>
               <span>ZackSigmund.com</span>
             </Heading>
           </Link>
           <Flex justify="between" gap="6" asChild>
-            <ul>
-              <li>
-                <LinkButton href="/about">About</LinkButton>
-              </li>
-              <li>
-                <LinkButton href="/projects">Projects</LinkButton>
-              </li>
-              <li>
-                <LinkButton href="/resume">Resume</LinkButton>
-              </li>
-            </ul>
+            <Reset>
+              <ul>
+                <li>
+                  <LinkButton href="/about">About</LinkButton>
+                </li>
+                <li>
+                  <LinkButton href="/projects">Projects</LinkButton>
+                </li>
+                <li>
+                  <LinkButton href="/resume">Resume</LinkButton>
+                </li>
+              </ul>
+            </Reset>
           </Flex>
         </nav>
       </Flex>
