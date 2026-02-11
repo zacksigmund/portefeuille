@@ -6,7 +6,14 @@ import { LinkButton } from "./LinkButton";
 export function Nav() {
   return (
     <Container>
-      <Flex justify="between" align="center" m="4" asChild>
+      <Flex
+        direction={{ initial: "column", sm: "row" }}
+        gap="4"
+        justify="between"
+        align="center"
+        m="4"
+        asChild
+      >
         <nav className={styles.nav}>
           <Link href="/" color="gray">
             <Heading size="7" asChild>
