@@ -3,7 +3,9 @@ import { Flex, Heading, Text } from "@radix-ui/themes";
 export default function About() {
   return (
     <Flex direction="column" gap="3">
-      <Heading as="h1">About me</Heading>
+      <Heading as="h1" size="8">
+        About me
+      </Heading>
       <Text as="p">
         I was born and raised in Cleveland, OH. After high school, I moved to
         Rochester, NY and attended Rochester Institute of Technology for

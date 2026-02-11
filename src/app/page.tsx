@@ -5,7 +5,9 @@ import { Flex, Heading, Text } from "@radix-ui/themes";
 export default function Home() {
   return (
     <Flex direction="column" gap="3">
-      <Heading as="h1">Zack Sigmund</Heading>
+      <Heading as="h1" size="8">
+        Zack Sigmund
+      </Heading>
       <Text as="p">
         Hi, I'm Zack, a senior full stack software engineer based out of
         Cleveland, OH. This site is under construction.
