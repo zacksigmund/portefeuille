@@ -6,6 +6,7 @@ import "./globals.css";
 import { config } from "@fortawesome/fontawesome-svg-core";
 import "@fortawesome/fontawesome-svg-core/styles.css";
 import { Theme } from "@radix-ui/themes";
+import { Nav } from "@/components/Nav";
 config.autoAddCss = false;
 
 const notoSans = Noto_Sans({
@@ -37,6 +38,7 @@ export default function RootLayout({
           radius="large"
           appearance="dark"
         >
+          <Nav />
           {children}
         </Theme>
       </body>

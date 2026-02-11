@@ -1,14 +1,14 @@
 import { default as NextLink } from "next/link";
-import { Link as RadixLink } from "@radix-ui/themes";
+import {
+  Link as RadixLink,
+  LinkProps as RadixLinkProps,
+} from "@radix-ui/themes";
 
-interface LinkProps
-  extends
-    React.PropsWithChildren,
-    React.AnchorHTMLAttributes<HTMLAnchorElement> {
+export interface LinkProps extends React.PropsWithChildren, RadixLinkProps {
   href: string;
 }
 
-export function Link({ href, children, ...rest }: LinkProps) {
+export function Link({ href, color, children, ...rest }: LinkProps) {
   const newTab = href?.includes(":");
   const targetProps = newTab
     ? {
@@ -18,7 +18,7 @@ export function Link({ href, children, ...rest }: LinkProps) {
     : {};
 
   return (
-    <RadixLink color="gray" asChild>
+    <RadixLink color={color} asChild>
       <NextLink href={href} {...targetProps} {...rest}>
         {children}
       </NextLink>
