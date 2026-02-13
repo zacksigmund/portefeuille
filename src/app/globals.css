@@ -16,6 +16,10 @@ a {
   text-decoration: none;
 }
 
+ul {
+  margin-inline-start: 1em;
+}
+
 @media (prefers-color-scheme: dark) {
   html {
     color-scheme: dark;

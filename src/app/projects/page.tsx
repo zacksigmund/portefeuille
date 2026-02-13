@@ -30,6 +30,36 @@ export default function Projects() {
         <Link href="https://github.com/zacksigmund/Sigfreed">repo</Link> and the{" "}
         <Link href="https://zacksigmund.github.io/Sigfreed/">site</Link>.
       </Text>
+      <Heading as="h2">This Site</Heading>
+      <Text as="p">
+        This website is pretty simple but pretty cool. Specifically:
+      </Text>
+      <Text asChild>
+        <ul>
+          <li>
+            Know my strengths. I'm not a designer, so I'm using{" "}
+            <Link href="https://www.radix-ui.com">Radix Themes</Link> for the
+            styles.
+          </li>
+          <li>
+            Don't reinvent the wheel. Radix Themes includes a bunch of
+            components, so I don't take up my own time doing what's already been
+            done.
+          </li>
+          <li>
+            Lean. I don't need advanced capabilities, so I'm able to host for
+            free with{" "}
+            <Link href="https://docs.github.com/en/pages">GitHub Pages</Link>{" "}
+            rather than self-host or pay for hosting.
+          </li>
+        </ul>
+      </Text>
+      <Text as="p">
+        <Link href="https://github.com/zacksigmund/portefeuille">
+          View the source code
+        </Link>
+        .
+      </Text>
     </Flex>
   );
 }
