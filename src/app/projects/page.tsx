@@ -28,7 +28,7 @@ export default function Projects() {
         platform. It's all vanilla JavaScript; there are no frameworks and no
         build. Check out the{" "}
         <Link href="https://github.com/zacksigmund/Sigfreed">repo</Link> and the{" "}
-        <Link href="https://sigfreed.app">site</Link>.
+        <Link href="https://zacksigmund.github.io/Sigfreed/">site</Link>.
       </Text>
     </Flex>
   );
