@@ -1,5 +1,5 @@
 import { config } from "@fortawesome/fontawesome-svg-core";
-import { Container, Theme } from "@radix-ui/themes";
+import { Container, Flex, Theme } from "@radix-ui/themes";
 import type { Metadata } from "next";
 import { Noto_Sans, Noto_Sans_JP } from "next/font/google";
 
@@ -43,7 +43,11 @@ export default function RootLayout({
         >
           <Nav />
           <Container size="3" py="9" px="5">
-            <main>{children}</main>
+            <main>
+              <Flex direction="column" gap="3">
+                {children}
+              </Flex>
+            </main>
           </Container>
         </Theme>
       </body>
