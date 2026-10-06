@@ -18,6 +18,7 @@ const notoSans = Noto_Sans({
 
 const notoJp = Noto_Sans_JP({
   variable: "--font-noto-jp",
+  preload: false,
 });
 
 export const metadata: Metadata = {
