@@ -5,6 +5,10 @@ const nextConfig: NextConfig = {
   /* config options here */
   pageExtensions: ["js", "jsx", "md", "mdx", "ts", "tsx"],
   reactCompiler: true,
+  output: "export",
+  images: {
+    unoptimized: true,
+  },
 };
 
 const withMDX = createMDX({
